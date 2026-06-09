@@ -3,191 +3,419 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New York Deaf Church | 뉴욕농아인교회</title>
+    <title>New York Deaf Church | Mexico Deaf Family Faith Retreat 2026</title>
+    <meta name="description" content="Support the first-ever Deaf Family Faith Retreat in eastern Mexico — June 25–28, 2026, Cancún. New York Deaf Church, 501(c)(3) nonprofit, EIN: 27-0551543.">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: #333; }
+
+        /* HEADER with community photo */
         header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.1em;
-            opacity: 0.95;
-        }
-        nav {
-            background: #333;
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-weight: 500;
-        }
-        nav a:hover {
-            color: #4CAF50;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        .section {
-            margin-bottom: 50px;
-        }
-        .section h2 {
-            color: #1e3c72;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            border-bottom: 3px solid #2a5298;
-            padding-bottom: 10px;
-        }
-        .section p {
-            font-size: 1em;
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        .mission-statement {
-            background: #f0f4f8;
-            padding: 25px;
-            border-left: 5px solid #2a5298;
-            margin-bottom: 30px;
-        }
-        .programs {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .program-card {
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-        }
-        .program-card h3 {
-            color: #2a5298;
-            margin-bottom: 10px;
-        }
-        .cta-button {
-            display: inline-block;
-            background: #2a5298;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        .cta-button:hover {
+            position: relative;
             background: #1e3c72;
+            color: white; text-align: center; overflow: hidden;
         }
-        .contact-info {
-            background: #f0f4f8;
-            padding: 25px;
-            border-radius: 8px;
-            margin-top: 20px;
+        .header-photo {
+            width: 100%; max-height: 420px; object-fit: cover;
+            display: block; opacity: 0.55;
         }
-        .contact-info p {
-            margin-bottom: 10px;
+        .header-overlay {
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            padding: 30px 20px;
+            background: linear-gradient(to bottom, rgba(30,60,114,0.5), rgba(30,60,114,0.75));
         }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 50px;
+        .header-overlay h1 { font-size: 2.6em; margin-bottom: 6px; text-shadow: 2px 2px 6px rgba(0,0,0,0.7); }
+        .header-overlay h2 { font-size: 1.2em; font-weight: 400; opacity: 0.95; margin-bottom: 10px; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); }
+        .header-overlay p { font-size: 0.95em; opacity: 0.9; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); }
+
+        /* URGENT BANNER */
+        .urgent-banner {
+            background: #b71c1c; color: white;
+            text-align: center; padding: 16px 20px;
+            font-size: 1.05em; font-weight: 700; letter-spacing: 0.3px;
         }
-        footer a {
-            color: #4CAF50;
-            text-decoration: none;
+        .urgent-banner a { color: #ffeb3b; text-decoration: underline; }
+
+        /* NAV */
+        nav { background: #1a1a1a; padding: 14px; text-align: center; }
+        nav a { color: #ccc; text-decoration: none; margin: 0 15px; font-weight: 500; font-size: 0.93em; }
+        nav a:hover { color: #4fc3f7; }
+
+        /* CONTAINER */
+        .container { max-width: 940px; margin: 0 auto; padding: 50px 20px; }
+        .section { margin-bottom: 65px; }
+        .section h2 {
+            color: #1e3c72; margin-bottom: 22px; font-size: 1.85em;
+            border-bottom: 3px solid #2a5298; padding-bottom: 10px;
+        }
+        .section p { margin-bottom: 15px; }
+
+        /* POSTER IMAGE */
+        .poster-wrap {
+            text-align: center; margin-bottom: 30px;
+        }
+        .poster-wrap img {
+            max-width: 360px; width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+        }
+
+        /* BANNER IMAGES */
+        .banner-img {
+            width: 100%; border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            margin-bottom: 20px; display: block;
+        }
+
+        /* FIRST-EVER HIGHLIGHT */
+        .first-ever {
+            background: linear-gradient(135deg, #0d47a1, #1565c0);
+            color: white; border-radius: 12px; padding: 30px 30px;
+            margin-bottom: 30px; text-align: center;
+        }
+        .first-ever .badge {
+            display: inline-block;
+            background: #ffeb3b; color: #1a1a1a;
+            font-weight: 800; font-size: 0.85em;
+            padding: 5px 16px; border-radius: 20px;
+            margin-bottom: 14px; letter-spacing: 0.5px;
+        }
+        .first-ever h3 { font-size: 1.7em; margin-bottom: 10px; }
+        .first-ever p { opacity: 0.92; font-size: 1em; }
+
+        /* CAMPAIGN GOAL BOX */
+        .goal-box {
+            background: #fff8e1; border: 2px solid #f9a825;
+            border-radius: 10px; padding: 25px 30px; text-align: center; margin: 25px 0;
+        }
+        .goal-box .amount { font-size: 2.8em; font-weight: 800; color: #e65100; }
+        .goal-box .label { font-size: 0.95em; color: #555; margin-top: 4px; }
+
+        /* BUTTONS */
+        .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 18px; }
+        .cta-button {
+            display: inline-block; background: #c62828; color: white;
+            padding: 15px 35px; text-decoration: none; border-radius: 6px;
+            font-weight: 700; font-size: 1.05em; transition: background 0.3s;
+        }
+        .cta-button:hover { background: #8b0000; }
+
+        /* STATS */
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 18px; margin: 25px 0;
+        }
+        .stat-card {
+            background: #f0f4f8; border-radius: 10px;
+            padding: 22px 12px; text-align: center;
+        }
+        .stat-card .num { font-size: 2.2em; font-weight: 800; color: #1e3c72; }
+        .stat-card .label { font-size: 0.88em; color: #555; margin-top: 5px; }
+
+        /* FUNDS */
+        .funds-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 20px; }
+        .fund-card {
+            background: #f9f9f9; border-left: 5px solid #1565c0;
+            padding: 20px; border-radius: 6px;
+        }
+        .fund-card h4 { color: #1e3c72; margin-bottom: 8px; }
+        .fund-card p { font-size: 0.93em; color: #555; margin: 0; }
+
+        /* STORY SECTION */
+        .story-box {
+            background: #f0f4f8; border-left: 5px solid #2a5298;
+            padding: 25px 28px; border-radius: 6px; margin-bottom: 20px;
+        }
+
+        /* PROGRAMS */
+        .programs { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 20px; }
+        .program-card { background: #f9f9f9; padding: 22px; border-radius: 8px; border: 1px solid #ddd; }
+        .program-card h3 { color: #2a5298; margin-bottom: 10px; }
+
+        /* CHECK DONATION */
+        .check-box {
+            background: #e8f5e9; border: 1px solid #a5d6a7;
+            border-radius: 8px; padding: 22px 25px; margin-top: 20px;
+        }
+        .check-box h4 { color: #2e7d32; margin-bottom: 12px; font-size: 1.05em; }
+        .check-box p { font-size: 0.95em; color: #333; margin-bottom: 6px; }
+
+        /* TAX NOTE */
+        .tax-note {
+            background: #e3f2fd; border: 1px solid #90caf9;
+            border-radius: 8px; padding: 18px 22px; margin-top: 20px;
+            font-size: 0.93em; color: #1565c0;
+        }
+
+        /* MISSION STATEMENT */
+        .mission-statement {
+            background: #f0f4f8; padding: 25px;
+            border-left: 5px solid #2a5298; margin-bottom: 25px; border-radius: 4px;
+        }
+
+        /* CONTACT */
+        .contact-info { background: #f0f4f8; padding: 25px; border-radius: 8px; margin-top: 20px; }
+        .contact-info p { margin-bottom: 10px; }
+
+        /* PRIVACY */
+        .privacy-section {
+            background: #fafafa; border: 1px solid #eee;
+            border-radius: 8px; padding: 28px; margin-bottom: 40px;
+            font-size: 0.91em; color: #555;
+        }
+        .privacy-section h2 { font-size: 1.35em; margin-bottom: 14px; }
+
+        /* FOOTER */
+        footer { background: #1a1a1a; color: #aaa; text-align: center; padding: 30px; }
+        footer a { color: #4fc3f7; text-decoration: none; }
+
+        @media (max-width: 600px) {
+            .stats-grid, .funds-grid, .programs { grid-template-columns: 1fr; }
+            .header-overlay h1 { font-size: 1.8em; }
+            .goal-box .amount { font-size: 2.2em; }
+            .poster-wrap img { max-width: 100%; }
         }
     </style>
 </head>
 <body>
-    <header>
+
+<!-- HEADER with community photo -->
+<header>
+    <img src="images/IMG_9262.JPG" alt="Mexico Deaf Community — Cancún 2026" class="header-photo">
+    <div class="header-overlay">
         <h1>New York Deaf Church</h1>
-        <h1>뉴욕농아인교회</h1>
-        <p>Building a Compassionate Community Through Faith | 믿음을 통한 자비로운 공동체 건설</p>
-    </header>
-
-    <nav>
-        <a href="#mission">Mission</a>
-        <a href="#programs">Programs</a>
-        <a href="#support">Support Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="container">
-        <section class="section" id="mission">
-            <h2>Our Mission</h2>
-            <div class="mission-statement">
-                <p><strong>New York Deaf Church</strong> is a 501(c)(3) nonprofit religious organization dedicated to serving the deaf and hard of hearing community in the New York metropolitan area. We provide spiritual guidance, community support, and accessibility services in American Sign Language (ASL) and Korean Sign Language (KSL).</p>
-                <p>우리는 뉴욕 지역 농인 및 청각장애인 공동체를 섬기기 위해 헌신하는 종교단체입니다. 미국수화(ASL)와 한국수화(KSL)를 통해 영적 지도, 공동체 지원, 접근성 서비스를 제공합니다.</p>
-            </div>
-            <p>Our organization has been serving the deaf community for over 40 years, with operations spanning Korea, China, and the United States. We believe in the power of faith to transform lives and create inclusive communities where everyone is welcomed and valued.</p>
-        </section>
-
-        <section class="section" id="programs">
-            <h2>Our Programs</h2>
-            <div class="programs">
-                <div class="program-card">
-                    <h3>Sunday Worship</h3>
-                    <p>Weekly worship services conducted entirely in American Sign Language with trained interpreters. All are welcome.</p>
-                </div>
-                <div class="program-card">
-                    <h3>Community Support</h3>
-                    <p>Counseling, job placement assistance, and social services for deaf and hard of hearing individuals and families.</p>
-                </div>
-                <div class="program-card">
-                    <h3>Educational Programs</h3>
-                    <p>Faith-based education and spiritual development programs for all ages in an accessible, inclusive environment.</p>
-                </div>
-                <div class="program-card">
-                    <h3>International Mission</h3>
-                    <p>Supporting deaf communities in Mexico, Korea, and China through mission work and family faith retreats.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="support">
-            <h2>Support Our Mission</h2>
-            <p>Your generous support helps us continue our vital work serving the deaf community. Donations are tax-deductible. All funds go directly toward providing accessibility services, educational programs, and community support.</p>
-            <a href="https://gofund.me/783775145" class="cta-button">Support Us on GoFundMe</a>
-        </section>
-
-        <section class="section" id="contact">
-            <h2>Contact Us</h2>
-            <div class="contact-info">
-                <p><strong>New York Deaf Church</strong></p>
-                <p>143-11 Willets Point Boulevard<br>Whitestone, New York 11357<br>United States</p>
-                <p>Phone: (917) 991-0703</p>
-                <p>Email: <a href="mailto:admin@newyorkdeafchurch.org">admin@newyorkdeafchurch.org</a></p>
-                <p>EIN: 27-0551543</p>
-            </div>
-        </section>
+        <h2>뉴욕농아인교회 &nbsp;|&nbsp; 纽约聋人基督教会</h2>
+        <p>Serving the Deaf Community Through Faith — New York &amp; Mexico</p>
     </div>
+</header>
 
-    <footer>
-        <p>&copy; 2026 New York Deaf Church. All rights reserved.</p>
-        <p><a href="#privacy">Privacy Policy</a></p>
-    </footer>
+<div class="urgent-banner">
+    🚨 URGENT — First-Ever Deaf Family Faith Retreat in Eastern Mexico: June 25–28, 2026, Cancún &nbsp;|&nbsp;
+    <a href="https://gofund.me/783775145">Donate Now →</a>
+</div>
+
+<nav>
+    <a href="#campaign">Campaign</a>
+    <a href="#story">Our Story</a>
+    <a href="#funds">Donations</a>
+    <a href="#programs">Programs</a>
+    <a href="#support">Give</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <!-- CAMPAIGN -->
+    <section class="section" id="campaign">
+        <h2>The Historic Mexico Deaf Mission</h2>
+
+        <!-- POSTER -->
+        <div class="poster-wrap">
+            <img src="images/Poster.png" alt="¡Conocí a Jesús! — Mexico Deaf Family Faith Retreat 2026">
+        </div>
+
+        <div class="first-ever">
+            <div class="badge">🏆 HISTORIC FIRST</div>
+            <h3>The First Deaf Family Faith Retreat<br>in Eastern Mexico</h3>
+            <p>For the first time in the history of eastern Mexico, deaf families will gather together in Cancún to encounter Jesus Christ — in their own language, through sign language worship and faith education. This retreat marks the beginning of deaf mission in Mexico.</p>
+            <p style="margin-top:12px; font-size:0.95em; opacity:0.85;">멕시코 동부지역 최초의 농인가족 신앙수련회입니다. 이 수련회는 멕시코 농인선교의 역사적 출발점이 됩니다.</p>
+        </div>
+
+        <!-- MAIN DEAF BANNER -->
+        <img src="images/Banner_deaf.png" alt="¡Conocí a Jesús! — Retiro de Fe para Familias Sordas" class="banner-img">
+
+        <div class="goal-box">
+            <div class="amount">$20,000</div>
+            <div class="label">Fundraising Goal &nbsp;|&nbsp; Tax-Deductible &nbsp;|&nbsp; 501(c)(3) EIN: 27-0551543</div>
+        </div>
+
+        <div class="btn-group">
+            <a href="https://gofund.me/783775145" class="cta-button">💛 Donate via GoFundMe</a>
+        </div>
+
+        <div class="tax-note" style="margin-top:22px;">
+            ✅ <strong>All donations are tax-deductible.</strong> New York Deaf Church is a 501(c)(3) nonprofit (EIN: 27-0551543). A donation receipt will be provided.
+        </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="section" id="story">
+        <h2>Why This Matters</h2>
+
+        <div class="story-box">
+            <p>Deaf individuals in Mexico are among the most spiritually and socially isolated communities in Latin America. Many have never heard the Gospel — not because they reject it, but because it has never been presented in sign language.</p>
+            <p>The <strong>Mexico Deaf Family Faith Retreat</strong> is the answer. It brings together deaf families from the Cancún region for 4 days of sign language worship, Bible teaching, and community — the first gathering of its kind in eastern Mexico.</p>
+            <p style="margin-top:10px; color:#1a237e;"><strong>멕시코 농인들에게 예수님을 만나는 방법, 예배의 방법을 전하는 신앙의 씨앗을 뿌리는 역사적 시작입니다.</strong></p>
+        </div>
+
+        <h3 style="color:#1e3c72; margin:25px 0 15px;">Who Is Serving</h3>
+        <div class="funds-grid">
+            <div class="fund-card">
+                <h4>🇰🇷 Korean Deaf Pastor</h4>
+                <p>A deaf pastor from Korea will lead worship and Bible teaching in sign language, bringing 40+ years of deaf ministry experience.</p>
+            </div>
+            <div class="fund-card">
+                <h4>🇲🇽 Mexico City Deaf Pastors</h4>
+                <p>A deaf pastor couple from Mexico City will serve as sign language ministry leaders for the retreat program.</p>
+            </div>
+            <div class="fund-card">
+                <h4>🏛️ Local Cancún Church</h4>
+                <p>Local hearing pastors and congregation members in Cancún will provide logistical support and volunteer service.</p>
+            </div>
+            <div class="fund-card">
+                <h4>👶 VBS Volunteer Team</h4>
+                <p>Mexican local volunteers and Korean missionaries will lead Vacation Bible School for deaf children alongside their parents.</p>
+            </div>
+        </div>
+
+        <div class="story-box" style="margin-top:25px; background:#fff3e0; border-color:#f57c00;">
+            <p><strong>📡 You Will Witness It Live</strong></p>
+            <p>Every moment of this retreat — worship, miracles, the Holy Spirit at work — will be shared with you through the New York Deaf Church website and Facebook page. <strong>You will see with your own eyes what God is doing in Mexico.</strong></p>
+            <p style="margin-top:8px; color:#bf360c;">수련회 기간 동안의 모든 순간은 뉴욕농아인교회 홈페이지와 페이스북을 통해 여러분에게 전해집니다. 성령이 일하시는 기적을 직접 보게 될 것입니다.</p>
+        </div>
+
+        <!-- CODA / VBS BANNER -->
+        <h3 style="color:#1e3c72; margin:30px 0 15px;">Children's Vacation Bible School (VBS)</h3>
+        <img src="images/Banner_CODA.png" alt="Children's VBS — Retiro de Fe para Familias Sordas" class="banner-img">
+        <p>Deaf children will join their parents in learning how to encounter Jesus through age-appropriate VBS programs in sign language — led by Mexican local volunteers and Korean missionary teachers.</p>
+        <p>농인 자녀들도 부모와 함께 예수님을 만나는 어린이 성경학교(VBS)에 참여하게 됩니다.</p>
+    </section>
+
+    <!-- FUNDS -->
+    <section class="section" id="funds">
+        <h2>Where Your Donation Goes</h2>
+        <p>100% of donations go directly to serving deaf families in Mexico. Pastors, teachers, children's teachers, and volunteer staff serve without compensation — your donation covers the essential costs that make this gathering possible.</p>
+
+        <div class="funds-grid">
+            <div class="fund-card">
+                <h4>🏠 Venue — 100 Participants</h4>
+                <p>Facility rental for a gathering of up to 100 deaf family members: main hall, classrooms, dining hall, kitchen, and outdoor spaces for the full 4-day retreat.</p>
+            </div>
+            <div class="fund-card">
+                <h4>🍽️ All Meals Included</h4>
+                <p>Three daily meals for all participants throughout the 4 days are fully funded by donations. Many Mexican deaf families cannot afford food costs on top of travel.</p>
+            </div>
+            <div class="fund-card">
+                <h4>👨‍👩‍👧 Participant Subsidies</h4>
+                <p>Local deaf families will pay a small participation fee according to what each household can afford. Donations cover the gap so no family is turned away due to cost.</p>
+            </div>
+            <div class="fund-card">
+                <h4>📚 Program Materials &amp; VBS</h4>
+                <p>Sign language Bible materials, children's VBS supplies, worship resources, and printed materials for all retreat sessions.</p>
+            </div>
+        </div>
+
+        <p style="margin-top:20px; color:#555; font-style:italic;">All ministry leaders — pastors, teachers, children's instructors, dining volunteers, and local church partners — serve entirely as dedicated volunteers. Your donation is 100% mission.</p>
+    </section>
+
+    <!-- IMPACT STATS -->
+    <section class="section">
+        <h2>Our Impact</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="num">100</div>
+                <div class="label">Target participants — deaf families</div>
+            </div>
+            <div class="stat-card">
+                <div class="num">40+</div>
+                <div class="label">Years serving the deaf community</div>
+            </div>
+            <div class="stat-card">
+                <div class="num">501(c)(3)</div>
+                <div class="label">Federally recognized nonprofit since 2010</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSION -->
+    <section class="section" id="mission">
+        <h2>About New York Deaf Church</h2>
+        <div class="mission-statement">
+            <p><strong>New York Deaf Church</strong> is a 501(c)(3) nonprofit religious organization based in Flushing, New York, dedicated to serving the deaf and hard of hearing community through faith-based programs and international mission work. All services are conducted in American Sign Language (ASL) and Korean Sign Language (KSL).</p>
+            <p style="margin-top:12px;">뉴욕농아인교회는 플러싱 뉴욕에 기반을 둔 비영리 종교단체로, 미국수화(ASL)와 한국수화(KSL)를 통해 농인 공동체에 영적 지도, 공동체 지원, 국제 선교 사역을 제공합니다.</p>
+        </div>
+        <p>Founded in New York and operating for over 40 years, our church has served deaf individuals and families across Korea, China, and the United States. In January 2026, we extended our mission to Mexico with the establishment of a deaf church in Cancún — now preparing for the historic first Deaf Family Faith Retreat in eastern Mexico.</p>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section class="section" id="programs">
+        <h2>New York Deaf Church Programs</h2>
+        <p style="color:#555; font-style:italic; margin-bottom:20px;">The following are programs of New York Deaf Church (Flushing, NY) — not programs in Cancún.</p>
+        <div class="programs">
+            <div class="program-card">
+                <h3>Sunday Worship (New York)</h3>
+                <p>Weekly services conducted entirely in American Sign Language at our Flushing, NY location. Open to all deaf and hearing individuals.</p>
+            </div>
+            <div class="program-card">
+                <h3>Community Support (New York)</h3>
+                <p>Counseling, job assistance, and social services for deaf individuals and families in the New York metropolitan area.</p>
+            </div>
+            <div class="program-card">
+                <h3>Faith Education (New York)</h3>
+                <p>Sign language–based Bible study and spiritual development programs for all ages at our New York church.</p>
+            </div>
+            <div class="program-card">
+                <h3>Mexico Deaf Mission</h3>
+                <p>New York Deaf Church's international mission work in Cancún, Mexico — including the historic 2026 Deaf Family Faith Retreat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DONATE -->
+    <section class="section" id="support">
+        <h2>Give to the Mexico Deaf Mission</h2>
+        <p>후원금은 멕시코인 농인 가족들을 위해 사용됩니다.</p>
+        <p>Your donation directly funds the Mexico Deaf Family Faith Retreat and is fully tax-deductible under our 501(c)(3) status.</p>
+
+        <div class="btn-group" style="justify-content:flex-start; margin-bottom:25px;">
+            <a href="https://gofund.me/783775145" class="cta-button">💛 Donate via GoFundMe</a>
+        </div>
+
+        <div class="check-box">
+            <h4>💳 Donate by Personal Check</h4>
+            <p><strong>Pay to the order of:</strong> New York Deaf Church</p>
+            <p><strong>Mail to:</strong> 143-11 Willets Point Boulevard, Whitestone, New York 11357</p>
+            <p style="margin-top:10px; font-size:0.9em; color:#555;">Please include "Mexico Mission" in the memo line. A donation receipt will be mailed to you for tax purposes.</p>
+        </div>
+
+        <div class="tax-note" style="margin-top:18px;">
+            New York Deaf Church — 501(c)(3) Nonprofit &nbsp;|&nbsp; EIN: 27-0551543<br>
+            143-11 Willets Point Blvd, Whitestone, NY 11357 &nbsp;|&nbsp; (917) 991-0703
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>New York Deaf Church</strong></p>
+            <p>143-11 Willets Point Boulevard<br>Whitestone, New York 11357</p>
+            <p>Phone: (917) 991-0703</p>
+            <p>Email: <a href="mailto:admin@newyorkdeafchurch.org">admin@newyorkdeafchurch.org</a></p>
+            <p>Website: <a href="https://www.newyorkdeafchurch.org">www.newyorkdeafchurch.org</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/groups/newyorkdeafchurch" target="_blank">facebook.com/groups/newyorkdeafchurch</a></p>
+        </div>
+    </section>
+
+    <!-- PRIVACY -->
+    <section class="privacy-section" id="privacy">
+        <h2>Privacy Policy</h2>
+        <p><strong>Last updated: June 2026</strong></p>
+        <p>New York Deaf Church operates https://www.newyorkdeafchurch.org. We collect only information you voluntarily provide when contacting us or donating through GoFundMe. We do not sell or share personal information with third parties. For questions: <a href="mailto:admin@newyorkdeafchurch.org">admin@newyorkdeafchurch.org</a></p>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 New York Deaf Church. All rights reserved.</p>
+    <p style="margin-top:8px;">
+        501(c)(3) Nonprofit &nbsp;|&nbsp; EIN: 27-0551543 &nbsp;|&nbsp;
+        <a href="#privacy">Privacy Policy</a> &nbsp;|&nbsp;
+        <a href="mailto:admin@newyorkdeafchurch.org">Contact</a>
+    </p>
+</footer>
+
 </body>
 </html>
